@@ -1,4 +1,4 @@
-# Moval.js
+# Moval.js (Movable Modal)
 
 A lightweight **movable modal with minimize functionality** built with **jQuery** and **CSS**.  
 Supports stacking multiple modals, minimizing to the bottom-right, restoring, and draggable repositioning.
