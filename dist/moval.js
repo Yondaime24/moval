@@ -73,6 +73,14 @@ class Moval {
       this.$modal.find(".moval-content").show();
       this.minimized = false;
 
+      // reset all forms inside this modal (if any)
+      const $forms = this.$modal.find("form");
+      if ($forms.length > 0) {
+        $forms.each(function () {
+          this.reset();
+        });
+      }
+
       Moval.removeFromArrays(this);
       Moval.layoutOpen();
       Moval.layoutMinimized();
